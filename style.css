@@ -19,7 +19,7 @@ body {
 /* DATOS */
 
 .glosario-datos {
-  width: 790px;
+  width: 760px;
   margin: 0 auto;
   height: 96px;
   display: grid;
@@ -45,7 +45,7 @@ body {
 /* DESCRIPCIONES */
 
 .glosario-descs {
-  width: 790px;
+  width: 760px;
   margin: 5px auto;
   height: 150px;
   display: grid;
@@ -79,7 +79,7 @@ body {
 .glosario-body {
   box-sizing: border-box;
   margin: 5px auto;
-  width: 790px;
+  width: 760px;
   height: 600px;
   position: relative;
   overflow: hidden;
