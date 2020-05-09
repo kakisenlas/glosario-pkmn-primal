@@ -248,21 +248,63 @@ body {
 
 /* TIPOS */
 
-/* Fuego */
+/* GHOST */
+.card.ghost,
+.current-pokemon > .pkm.ghost,
+.current-pokemon > .pkm.ghost .mov,
+.current-pokemon > .pkm.ghost .mov::after {
+  background: #5169ad !important;
+}
+
+.type-icon.ghost,
+.current-pokemon > .pkm.ghost .ability > .name,
+.current-pokemon > .pkm.ghost .stats {
+  color: #5169ad !important;
+}
+
+/* FIRE */
 .card.fire,
 .current-pokemon > .pkm.fire,
 .current-pokemon > .pkm.fire .mov,
 .current-pokemon > .pkm.fire .mov::after {
-  background: #f76b6d !important;
+  background: #d35733 !important;
 }
 
 .type-icon.fire,
 .current-pokemon > .pkm.fire .ability > .name,
 .current-pokemon > .pkm.fire .stats {
-  color: #f76b6d !important;
+  color: #d35733 !important;
 }
 
-/* Agua */
+/* ELECTRIC */
+.card.electric,
+.current-pokemon > .pkm.electric,
+.current-pokemon > .pkm.electric .mov,
+.current-pokemon > .pkm.electric .mov::after {
+  background: #f5d339 !important;
+}
+
+.type-icon.electric,
+.current-pokemon > .pkm.electric .ability > .name,
+.current-pokemon > .pkm.electric .stats {
+  color: #f5d339 !important;
+}
+
+/* POISON */
+.card.poison,
+.current-pokemon > .pkm.poison,
+.current-pokemon > .pkm.poison .mov,
+.current-pokemon > .pkm.poison .mov::after {
+  background: #ab6aca !important;
+}
+
+.type-icon.poison,
+.current-pokemon > .pkm.poison .ability > .name,
+.current-pokemon > .pkm.poison .stats {
+  color: #ab6aca !important;
+}
+
+/* WATER */
 .card.water,
 .current-pokemon > .pkm.water,
 .current-pokemon > .pkm.water .mov,
@@ -276,46 +318,228 @@ body {
   color: #3897ff !important;
 }
 
-/* Eléctrico */
-.card.electric,
-.current-pokemon > .pkm.electric,
-.current-pokemon > .pkm.electric .mov,
-.current-pokemon > .pkm.electric .mov::after {
-  background: #fbde80 !important;
+/* STEEL */
+.card.steel,
+.current-pokemon > .pkm.steel,
+.current-pokemon > .pkm.steel .mov,
+.current-pokemon > .pkm.steel .mov::after {
+  background: #598ea3 !important;
 }
 
-.type-icon.electric,
-.current-pokemon > .pkm.electric .ability > .name,
-.current-pokemon > .pkm.electric .stats {
-  color: #fbde80 !important;
+.type-icon.steel,
+.current-pokemon > .pkm.steel .ability > .name,
+.current-pokemon > .pkm.steel .stats {
+  color: #598ea3 !important;
 }
 
-/* Fantasma */
-.card.ghost,
-.current-pokemon > .pkm.ghost,
-.current-pokemon > .pkm.ghost .mov,
-.current-pokemon > .pkm.ghost .mov::after {
-  background: #66659d !important;
+/* GROUND */
+.card.ground,
+.current-pokemon > .pkm.ground,
+.current-pokemon > .pkm.ground .mov,
+.current-pokemon > .pkm.ground .mov::after {
+  background: #4d91d6 !important;
 }
 
-.type-icon.ghost,
-.current-pokemon > .pkm.ghost .ability > .name,
-.current-pokemon > .pkm.ghost .stats {
-  color: #66659d !important;
+.type-icon.ground,
+.current-pokemon > .pkm.ground .ability > .name,
+.current-pokemon > .pkm.ground .stats {
+  color: #4d91d6 !important;
 }
 
-/* Veneno */
-.card.poison,
-.current-pokemon > .pkm.poison,
-.current-pokemon > .pkm.poison .mov,
-.current-pokemon > .pkm.poison .mov::after {
-  background: #a15c93 !important;
+/* BUG */
+.card.bug,
+.current-pokemon > .pkm.bug,
+.current-pokemon > .pkm.bug .mov,
+.current-pokemon > .pkm.bug .mov::after {
+  background: #92c22b !important;
 }
 
-.type-icon.poison,
-.current-pokemon > .pkm.poison .ability > .name,
-.current-pokemon > .pkm.poison .stats {
-  color: #a15c93 !important;
+.type-icon.bug,
+.current-pokemon > .pkm.bug .ability > .name,
+.current-pokemon > .pkm.bug .stats {
+  color: #92c22b !important;
+}
+
+/* DRAGON */
+.card.dragon,
+.current-pokemon > .pkm.dragon,
+.current-pokemon > .pkm.dragon .mov,
+.current-pokemon > .pkm.dragon .mov::after {
+  background: #296ec5 !important;
+}
+
+.type-icon.dragon,
+.current-pokemon > .pkm.dragon .ability > .name,
+.current-pokemon > .pkm.dragon .stats {
+  color: #296ec5 !important;
+}
+
+/* DRAGON */
+.card.dragon,
+.current-pokemon > .pkm.dragon,
+.current-pokemon > .pkm.dragon .mov,
+.current-pokemon > .pkm.dragon .mov::after {
+  background: #296ec5 !important;
+}
+
+.type-icon.dragon,
+.current-pokemon > .pkm.dragon .ability > .name,
+.current-pokemon > .pkm.dragon .stats {
+  color: #296ec5 !important;
+}
+
+/* FAIRY */
+.card.fairy,
+.current-pokemon > .pkm.fairy,
+.current-pokemon > .pkm.fairy .mov,
+.current-pokemon > .pkm.fairy .mov::after {
+  background: #ec90e7 !important;
+}
+
+.type-icon.fairy,
+.current-pokemon > .pkm.fairy .ability > .name,
+.current-pokemon > .pkm.fairy .stats {
+  color: #ec90e7 !important;
+}
+
+/* ICE */
+.card.ice,
+.current-pokemon > .pkm.ice,
+.current-pokemon > .pkm.ice .mov,
+.current-pokemon > .pkm.ice .mov::after {
+  background: #73cfc1 !important;
+}
+
+.type-icon.ice,
+.current-pokemon > .pkm.ice .ability > .name,
+.current-pokemon > .pkm.ice .stats {
+  color: #73cfc1 !important;
+}
+
+/* FIGHTING */
+.card.fighting,
+.current-pokemon > .pkm.fighting,
+.current-pokemon > .pkm.fighting .mov,
+.current-pokemon > .pkm.fighting .mov::after {
+  background: #cf3e6a !important;
+}
+
+.type-icon.fighting,
+.current-pokemon > .pkm.fighting .ability > .name,
+.current-pokemon > .pkm.fighting .stats {
+  color: #cf3e6a !important;
+}
+
+/* NORMAL */
+.card.normal,
+.current-pokemon > .pkm.normal,
+.current-pokemon > .pkm.normal .mov,
+.current-pokemon > .pkm.normal .mov::after {
+  background: #929aa3 !important;
+}
+
+.type-icon.normal,
+.current-pokemon > .pkm.normal .ability > .name,
+.current-pokemon > .pkm.normal .stats {
+  color: #929aa3 !important;
+}
+
+/* GRASS */
+.card.grass,
+.current-pokemon > .pkm.grass,
+.current-pokemon > .pkm.grass .mov,
+.current-pokemon > .pkm.grass .mov::after {
+  background: #62bd59 !important;
+}
+
+.type-icon.grass,
+.current-pokemon > .pkm.grass .ability > .name,
+.current-pokemon > .pkm.grass .stats {
+  color: #62bd59 !important;
+}
+
+/* PSYCHIC */
+.card.psychic,
+.current-pokemon > .pkm.psychic,
+.current-pokemon > .pkm.psychic .mov,
+.current-pokemon > .pkm.psychic .mov::after {
+  background: #f87178 !important;
+}
+
+.type-icon.psychic,
+.current-pokemon > .pkm.psychic .ability > .name,
+.current-pokemon > .pkm.psychic .stats {
+  color: #f87178 !important;
+}
+
+/* ROCK */
+.card.rock,
+.current-pokemon > .pkm.rock,
+.current-pokemon > .pkm.rock .mov,
+.current-pokemon > .pkm.rock .mov::after {
+  background: #c6b88c !important;
+}
+
+.type-icon.rock,
+.current-pokemon > .pkm.rock .ability > .name,
+.current-pokemon > .pkm.rock .stats {
+  color: #c6b88c !important;
+}
+
+/* DARK */
+.card.dark,
+.current-pokemon > .pkm.dark,
+.current-pokemon > .pkm.dark .mov,
+.current-pokemon > .pkm.dark .mov::after {
+  background: #595265 !important;
+}
+
+.type-icon.dark,
+.current-pokemon > .pkm.dark .ability > .name,
+.current-pokemon > .pkm.dark .stats {
+  color: #595265 !important;
+}
+
+/* GROUND */
+.card.ground,
+.current-pokemon > .pkm.ground,
+.current-pokemon > .pkm.ground .mov,
+.current-pokemon > .pkm.ground .mov::after {
+  background: #d97842 !important;
+}
+
+.type-icon.ground,
+.current-pokemon > .pkm.ground .ability > .name,
+.current-pokemon > .pkm.ground .stats {
+  color: #d97842 !important;
+}
+
+/* FLYING */
+.card.flying,
+.current-pokemon > .pkm.flying,
+.current-pokemon > .pkm.flying .mov,
+.current-pokemon > .pkm.flying .mov::after {
+  background: #8eaadf !important;
+}
+
+.type-icon.flying,
+.current-pokemon > .pkm.flying .ability > .name,
+.current-pokemon > .pkm.flying .stats {
+  color: #8eaadf !important;
+}
+
+/* NONE */
+.card.none,
+.current-pokemon > .pkm.none,
+.current-pokemon > .pkm.none .mov,
+.current-pokemon > .pkm.none .mov::after {
+  background: #202020 !important;
+}
+
+.type-icon.none,
+.current-pokemon > .pkm.none .ability > .name,
+.current-pokemon > .pkm.none .stats {
+  color: #202020 !important;
 }
 
 /* DATOS SUPERIOR */
