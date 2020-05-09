@@ -271,7 +271,8 @@ body {
 }
 
 .type-icon.fire,
-.current-pokemon > .pkm.fire .ability > .name {
+.current-pokemon > .pkm.fire .ability > .name,
+.current-pokemon > .pkm.fire .hp {
   color: #f76b6d !important;
 }
 
@@ -283,7 +284,8 @@ body {
 }
 
 .type-icon.water,
-.current-pokemon > .pkm.water .ability > .name {
+.current-pokemon > .pkm.water .ability > .name,
+.current-pokemon > .pkm.water .hp {
   color: #3897ff !important;
 }
 
@@ -295,7 +297,8 @@ body {
 }
 
 .type-icon.electric,
-.current-pokemon > .pkm.electric .ability > .name {
+.current-pokemon > .pkm.electric .ability > .name,
+.current-pokemon > .pkm.electric .hp {
   color: #fbde80 !important;
 }
 
@@ -413,6 +416,13 @@ body {
   left: 150px;
 }
 
+.current-pokemon .data .hp {
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  margin-left: 40px;
+  font-size: 10px;
+}
+
 .current-pokemon .data > .ability {
   padding: 0 40px;
 }
@@ -435,7 +445,7 @@ body {
 
 .glosario-inventario {
   margin: 15px auto;
-  width: 740px;
+  width: 760px;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-gap: 10px;
