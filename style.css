@@ -1,5 +1,12 @@
 /* CONFIG */
 
+/*
+
+https://i.ibb.co/K6CJgbc/Agua-fresca-Dream-World.png
+https://i.ibb.co/RbLx44r/Amuleto-Dream-World.png
+
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;900&family=Lato:wght@300;400;900&display=swap');
 
 body {
@@ -58,7 +65,7 @@ body {
 }
 
 .glosario-descs .desc .title {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: 'Jost', sans-serif;
   font-weight: 900;
   text-transform: uppercase;
@@ -67,10 +74,10 @@ body {
 }
 
 .glosario-descs .desc .text {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: 'Lato', sans-serif;
   padding-left: 20px;
-  text-align:justify;
+  text-align: justify;
   font-size: 12px;
 }
 
@@ -422,6 +429,54 @@ body {
   font-family: 'Lato', sans-serif;
   text-align: justify;
   font-size: 12px;
+}
+
+/* INVENTARIO */
+
+.glosario-inventario {
+  margin: 15px auto;
+  width: 760px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+}
+
+.glosario-inventario > .item {
+  background: rgba(14, 14, 14, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0 20px;
+  position: relative;
+  height: 120px;
+}
+
+.glosario-inventario > .item .tooltip {
+  background: rgba(34, 51, 59, 1);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  padding: 3px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  color: #ffffff;
+  line-height: 20px;
+}
+
+.glosario-inventario > .item .name {
+  background: rgba(34, 51, 59, 1);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 3px 0;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  color: #ffffff;
+  line-height: 20px;
 }
 
 /* HELPERS */
