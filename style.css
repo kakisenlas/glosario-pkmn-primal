@@ -439,7 +439,23 @@ body {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-gap: 10px;
+  height: 150px;
+  overflow: auto;
+  padding: 10px;
 }
+
+.glosario-inventario::-webkit-scrollbar {
+  width: 5px;
+}
+
+.glosario-inventario::-webkit-scrollbar-thumb {
+  background: rgba(34, 51, 59, 1);
+}
+
+.glosario-inventario::-webkit-scrollbar-track {
+  background: rgba(14, 14, 14, 1);
+}
+
 
 .glosario-inventario > .item {
   background: rgba(14, 14, 14, 1);
