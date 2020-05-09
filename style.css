@@ -126,20 +126,6 @@ body {
   background: rgba(14, 14, 14, 1);
 }
 
-/* TIPOS */
-
-.card.fire {
-  background: #f76b6d !important;
-}
-
-.card.water {
-  background: #3897ff !important;
-}
-
-.card.electric {
-  background: #fbde80 !important;
-}
-
 /* CARTAS */
 
 .pokemon-list > .card {
@@ -254,16 +240,25 @@ body {
   height: 25px;
   font-size: 15px;
   position: absolute;
-  right: 10px;
-  top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.current-pokemon .type-icon.primary {
+  right: 10px;
+  top: 10px;
+}
+
+.current-pokemon .type-icon.secondary {
+  right: 10px;
+  top: 40px;
+}
+
 /* TIPOS */
 
 /* Fuego */
+.card.fire,
 .current-pokemon > .pkm.fire,
 .current-pokemon > .pkm.fire .mov,
 .current-pokemon > .pkm.fire .mov::after {
@@ -272,11 +267,12 @@ body {
 
 .type-icon.fire,
 .current-pokemon > .pkm.fire .ability > .name,
-.current-pokemon > .pkm.fire .hp {
+.current-pokemon > .pkm.fire .stats {
   color: #f76b6d !important;
 }
 
 /* Agua */
+.card.water,
 .current-pokemon > .pkm.water,
 .current-pokemon > .pkm.water .mov,
 .current-pokemon > .pkm.water .mov::after {
@@ -285,11 +281,12 @@ body {
 
 .type-icon.water,
 .current-pokemon > .pkm.water .ability > .name,
-.current-pokemon > .pkm.water .hp {
+.current-pokemon > .pkm.water .stats {
   color: #3897ff !important;
 }
 
 /* Eléctrico */
+.card.electric,
 .current-pokemon > .pkm.electric,
 .current-pokemon > .pkm.electric .mov,
 .current-pokemon > .pkm.electric .mov::after {
@@ -298,8 +295,36 @@ body {
 
 .type-icon.electric,
 .current-pokemon > .pkm.electric .ability > .name,
-.current-pokemon > .pkm.electric .hp {
+.current-pokemon > .pkm.electric .stats {
   color: #fbde80 !important;
+}
+
+/* Fantasma */
+.card.ghost,
+.current-pokemon > .pkm.ghost,
+.current-pokemon > .pkm.ghost .mov,
+.current-pokemon > .pkm.ghost .mov::after {
+  background: #66659d !important;
+}
+
+.type-icon.ghost,
+.current-pokemon > .pkm.ghost .ability > .name,
+.current-pokemon > .pkm.ghost .stats {
+  color: #66659d !important;
+}
+
+/* Veneno */
+.card.poison,
+.current-pokemon > .pkm.poison,
+.current-pokemon > .pkm.poison .mov,
+.current-pokemon > .pkm.poison .mov::after {
+  background: #a15c93 !important;
+}
+
+.type-icon.poison,
+.current-pokemon > .pkm.poison .ability > .name,
+.current-pokemon > .pkm.poison .stats {
+  color: #a15c93 !important;
 }
 
 /* DATOS SUPERIOR */
@@ -416,8 +441,8 @@ body {
   left: 150px;
 }
 
-.current-pokemon .data .hp {
-  color: #FFFFFF;
+.current-pokemon .data .stats {
+  color: #ffffff;
   font-family: 'Lato', sans-serif;
   margin-left: 40px;
   font-size: 10px;

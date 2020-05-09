@@ -14,11 +14,11 @@
   <body>
     <div class="postbody">
       <div class="glosario-datos">
-        <div class="campo"><span>Nivel:</span> 1</div>
+        <div class="campo"><span>Nivel:</span> 4</div>
         <div class="campo"><span>Liga:</span> Bronce</div>
-        <div class="campo"><span>Experiencia:</span> 1</div>
+        <div class="campo"><span>Experiencia:</span> 3.500</div>
         <div class="campo"><span>Profesión:</span> Ciudadano</div>
-        <div class="campo"><span>Oro:</span> 55.000</div>
+        <div class="campo"><span>Oro:</span> 65.000</div>
         <div class="campo"><span>Gremio:</span> N/A</div>
       </div>
 
@@ -54,7 +54,18 @@
               alt="litten-sprite"
             />
           </div>
-          <div pkm="pkm-3" id="card-3" class="card"></div>
+
+          <div pkm="pkm-3" id="card-3" class="card ghost">
+            <div class="name">Gastly</div>
+            <div class="type primary">Fantasma</div>
+            <div class="type secondary">Veneno</div>
+            <img
+              class="sprite"
+              src="https://i.ibb.co/H4yBvFD/Gastly-XY.gif"
+              alt="gastly-sprite"
+            />
+          </div>
+
           <div pkm="pkm-4" id="card-4" class="card"></div>
           <div pkm="pkm-5" id="card-5" class="card"></div>
           <div pkm="pkm-6" id="card-6" class="card"></div>
@@ -65,7 +76,7 @@
         <div class="current-pokemon">
           <!-- Magby -->
           <div id="pkm-1" class="pkm fire active">
-            <span class="type-icon fire th th-fire"></span>
+            <span class="type-icon primary fire th th-fire"></span>
             <div class="name">Magby</div>
             <div class="type primary">Fuego</div>
             <img
@@ -78,10 +89,11 @@
                 <li class="mov">Ascuas</li>
                 <li class="mov">Malicioso</li>
                 <li class="mov">Polución</li>
+                <li class="mov">Bofetón Lodo</li>
               </ul>
 
-              <div class="hp">
-                40 <strong>HP</strong>
+              <div class="stats">
+                40 <strong>HP</strong> | 1 <strong>VICTORIA</strong>
               </div>
 
               <div class="ability">
@@ -97,7 +109,7 @@
 
           <!-- Litten -->
           <div id="pkm-2" class="pkm fire">
-            <span class="type-icon fire th th-fire"></span>
+            <span class="type-icon primary fire th th-fire"></span>
             <div class="name">Litten</div>
             <div class="type primary">Fuego</div>
             <img
@@ -111,10 +123,11 @@
                 <li class="mov">Arañazo</li>
                 <li class="mov">Ascuas</li>
                 <li class="mov">Gruñido</li>
+                <li class="mov">Garra Umbría</li>
               </ul>
 
-              <div class="hp">
-                40 <strong>HP</strong>
+              <div class="stats">
+                40 <strong>HP</strong> | 0 <strong>VICTORIAS</strong>
               </div>
 
               <div class="ability">
@@ -123,6 +136,42 @@
                   Aumenta la potencia de los movimientos de tipo fuego del
                   poseedor en 15/20/30 (Dependiendo de su etapa) cuando está por
                   debajo del 50% de vida total.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gastly -->
+          <div id="pkm-3" class="pkm ghost">
+            <span class="type-icon primary ghost th th-skull-o"></span>
+            <span class="type-icon secondary poison th th-vinegar"></span>
+            <div class="name">Gastly</div>
+            <div class="type primary">Fantasma</div>
+            <div class="type secondary">Veneno</div>
+            <img
+              src="https://i.ibb.co/HYMj5bh/Gastly.png"
+              width="250"
+              class="drawing"
+              alt="gastly-drawing"
+            />
+            <div class="data">
+              <ul class="movements">
+                <li class="mov">Rayo Confuso</li>
+                <li class="mov">Rencor</li>
+                <li class="mov">Maldición</li>
+                <li class="mov">Hipnosis</li>
+              </ul>
+
+              <div class="stats">
+                40 <strong>HP</strong> | 0 <strong>VICTORIAS</strong>
+              </div>
+
+              <div class="ability">
+                <div class="name">Levitación</div>
+                <div class="desc">
+                  El poseedor de esta habilidad es inmune a los movimientos de
+                  tipo tierra. Puede verse afectado por habilidades como
+                  Rompemoldes o movimientos como Antiaéreo.
                 </div>
               </div>
             </div>
@@ -145,7 +194,7 @@
             src="https://i.ibb.co/RbLx44r/Amuleto-Dream-World.png"
             alt="agua fresca"
           />
-          <div class="tooltip">5</div>
+          <div class="tooltip">4</div>
           <div class="name">Pergamino Alfa</div>
         </div>
         <div class="item"></div>
