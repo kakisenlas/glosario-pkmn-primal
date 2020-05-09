@@ -456,7 +456,6 @@ body {
   background: rgba(14, 14, 14, 1);
 }
 
-
 .glosario-inventario > .item {
   background: rgba(14, 14, 14, 1);
   display: flex;
@@ -512,4 +511,24 @@ body {
   opacity: 1;
   top: 0;
   transition: all ease-out 0.45s;
+}
+
+/* CŔEDITOS */
+
+.credits {
+  display: block;
+  width: 150px;
+  background: rgba(14, 14, 14, 1);
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.credits strong {
+  color: rgba(34, 51, 59, 1);
 }
