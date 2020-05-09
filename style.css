@@ -445,7 +445,7 @@ body {
 
 .glosario-inventario {
   margin: 15px auto;
-  width: 760px;
+  width: 740px;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-gap: 10px;
