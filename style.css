@@ -45,14 +45,16 @@ body {
 .glosario-descs {
   width: 760px;
   margin: 5px auto;
-  height: 150px;
+  height: 250px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 5px;
 }
 
 .glosario-descs .desc {
+  height: 250px;
   background: rgba(14, 14, 14, 1);
+  overflow: hidden;
 }
 
 .glosario-descs .desc .title {
@@ -70,6 +72,11 @@ body {
   padding-left: 20px;
   text-align: justify;
   font-size: 12px;
+  overflow: auto;
+  height: 150px;
+  padding: 0 20px;
+  border-right: 20px solid rgba(14, 14, 14, 1);
+  border-bottom: 20px solid rgba(14, 14, 14, 1);
 }
 
 /* CONTENEDOR */
@@ -105,15 +112,18 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.pokemon-list::-webkit-scrollbar {
+.pokemon-list::-webkit-scrollbar,
+.glosario-descs .desc .text::-webkit-scrollbar {
   width: 5px;
 }
 
-.pokemon-list::-webkit-scrollbar-thumb {
+.pokemon-list::-webkit-scrollbar-thumb,
+.glosario-descs .desc .text::-webkit-scrollbar-thumb {
   background: rgba(34, 51, 59, 1);
 }
 
-.pokemon-list::-webkit-scrollbar-track {
+.pokemon-list::-webkit-scrollbar-track,
+.glosario-descs .desc .text::-webkit-scrollbar-track {
   background: rgba(14, 14, 14, 1);
 }
 
@@ -252,7 +262,9 @@ body {
 .card.ghost,
 .current-pokemon > .pkm.ghost,
 .current-pokemon > .pkm.ghost .mov,
-.current-pokemon > .pkm.ghost .mov::after {
+.current-pokemon > .pkm.ghost .mov::after,
+.current-pokemon > .pkm.ghost .tier,
+.current-pokemon > .pkm.ghost .tier::after {
   background: #5169ad !important;
 }
 
@@ -266,7 +278,9 @@ body {
 .card.fire,
 .current-pokemon > .pkm.fire,
 .current-pokemon > .pkm.fire .mov,
-.current-pokemon > .pkm.fire .mov::after {
+.current-pokemon > .pkm.fire .mov::after,
+.current-pokemon > .pkm.fire .tier,
+.current-pokemon > .pkm.fire .tier::after {
   background: #d35733 !important;
 }
 
@@ -280,7 +294,9 @@ body {
 .card.electric,
 .current-pokemon > .pkm.electric,
 .current-pokemon > .pkm.electric .mov,
-.current-pokemon > .pkm.electric .mov::after {
+.current-pokemon > .pkm.electric .mov::after,
+.current-pokemon > .pkm.electric .tier,
+.current-pokemon > .pkm.electric .tier::after {
   background: #f5d339 !important;
 }
 
@@ -294,7 +310,9 @@ body {
 .card.poison,
 .current-pokemon > .pkm.poison,
 .current-pokemon > .pkm.poison .mov,
-.current-pokemon > .pkm.poison .mov::after {
+.current-pokemon > .pkm.poison .mov::after,
+.current-pokemon > .pkm.poison .tier,
+.current-pokemon > .pkm.poison .tier::after {
   background: #ab6aca !important;
 }
 
@@ -308,7 +326,9 @@ body {
 .card.water,
 .current-pokemon > .pkm.water,
 .current-pokemon > .pkm.water .mov,
-.current-pokemon > .pkm.water .mov::after {
+.current-pokemon > .pkm.water .mov::after,
+.current-pokemon > .pkm.water .tier,
+.current-pokemon > .pkm.water .tier::after {
   background: #3897ff !important;
 }
 
@@ -322,7 +342,9 @@ body {
 .card.steel,
 .current-pokemon > .pkm.steel,
 .current-pokemon > .pkm.steel .mov,
-.current-pokemon > .pkm.steel .mov::after {
+.current-pokemon > .pkm.steel .mov::after,
+.current-pokemon > .pkm.steel .tier,
+.current-pokemon > .pkm.steel .tier::after {
   background: #598ea3 !important;
 }
 
@@ -332,25 +354,13 @@ body {
   color: #598ea3 !important;
 }
 
-/* GROUND */
-.card.ground,
-.current-pokemon > .pkm.ground,
-.current-pokemon > .pkm.ground .mov,
-.current-pokemon > .pkm.ground .mov::after {
-  background: #4d91d6 !important;
-}
-
-.type-icon.ground,
-.current-pokemon > .pkm.ground .ability > .name,
-.current-pokemon > .pkm.ground .stats {
-  color: #4d91d6 !important;
-}
-
 /* BUG */
 .card.bug,
 .current-pokemon > .pkm.bug,
 .current-pokemon > .pkm.bug .mov,
-.current-pokemon > .pkm.bug .mov::after {
+.current-pokemon > .pkm.bug .mov::after,
+.current-pokemon > .pkm.bug .tier,
+.current-pokemon > .pkm.bug .tier::after {
   background: #92c22b !important;
 }
 
@@ -364,21 +374,9 @@ body {
 .card.dragon,
 .current-pokemon > .pkm.dragon,
 .current-pokemon > .pkm.dragon .mov,
-.current-pokemon > .pkm.dragon .mov::after {
-  background: #296ec5 !important;
-}
-
-.type-icon.dragon,
-.current-pokemon > .pkm.dragon .ability > .name,
-.current-pokemon > .pkm.dragon .stats {
-  color: #296ec5 !important;
-}
-
-/* DRAGON */
-.card.dragon,
-.current-pokemon > .pkm.dragon,
-.current-pokemon > .pkm.dragon .mov,
-.current-pokemon > .pkm.dragon .mov::after {
+.current-pokemon > .pkm.dragon .mov::after,
+.current-pokemon > .pkm.dragon .tier,
+.current-pokemon > .pkm.dragon .tier::after {
   background: #296ec5 !important;
 }
 
@@ -392,7 +390,9 @@ body {
 .card.fairy,
 .current-pokemon > .pkm.fairy,
 .current-pokemon > .pkm.fairy .mov,
-.current-pokemon > .pkm.fairy .mov::after {
+.current-pokemon > .pkm.fairy .mov::after,
+.current-pokemon > .pkm.fairy .tier,
+.current-pokemon > .pkm.fairy .tier::after {
   background: #ec90e7 !important;
 }
 
@@ -406,7 +406,9 @@ body {
 .card.ice,
 .current-pokemon > .pkm.ice,
 .current-pokemon > .pkm.ice .mov,
-.current-pokemon > .pkm.ice .mov::after {
+.current-pokemon > .pkm.ice .mov::after,
+.current-pokemon > .pkm.ice .tier,
+.current-pokemon > .pkm.ice .tier::after {
   background: #73cfc1 !important;
 }
 
@@ -420,7 +422,9 @@ body {
 .card.fighting,
 .current-pokemon > .pkm.fighting,
 .current-pokemon > .pkm.fighting .mov,
-.current-pokemon > .pkm.fighting .mov::after {
+.current-pokemon > .pkm.fighting .mov::after,
+.current-pokemon > .pkm.fighting .tier,
+.current-pokemon > .pkm.fighting .tier::after {
   background: #cf3e6a !important;
 }
 
@@ -434,7 +438,9 @@ body {
 .card.normal,
 .current-pokemon > .pkm.normal,
 .current-pokemon > .pkm.normal .mov,
-.current-pokemon > .pkm.normal .mov::after {
+.current-pokemon > .pkm.normal .mov::after,
+.current-pokemon > .pkm.normal .tier,
+.current-pokemon > .pkm.normal .tier::after {
   background: #929aa3 !important;
 }
 
@@ -448,7 +454,9 @@ body {
 .card.grass,
 .current-pokemon > .pkm.grass,
 .current-pokemon > .pkm.grass .mov,
-.current-pokemon > .pkm.grass .mov::after {
+.current-pokemon > .pkm.grass .mov::after,
+.current-pokemon > .pkm.grass .tier,
+.current-pokemon > .pkm.grass .tier::after {
   background: #62bd59 !important;
 }
 
@@ -462,7 +470,9 @@ body {
 .card.psychic,
 .current-pokemon > .pkm.psychic,
 .current-pokemon > .pkm.psychic .mov,
-.current-pokemon > .pkm.psychic .mov::after {
+.current-pokemon > .pkm.psychic .mov::after,
+.current-pokemon > .pkm.pyschic .tier,
+.current-pokemon > .pkm.pyschic .tier::after {
   background: #f87178 !important;
 }
 
@@ -476,7 +486,9 @@ body {
 .card.rock,
 .current-pokemon > .pkm.rock,
 .current-pokemon > .pkm.rock .mov,
-.current-pokemon > .pkm.rock .mov::after {
+.current-pokemon > .pkm.rock .mov::after,
+.current-pokemon > .pkm.rock .tier,
+.current-pokemon > .pkm.rock .tier::after {
   background: #c6b88c !important;
 }
 
@@ -490,7 +502,9 @@ body {
 .card.dark,
 .current-pokemon > .pkm.dark,
 .current-pokemon > .pkm.dark .mov,
-.current-pokemon > .pkm.dark .mov::after {
+.current-pokemon > .pkm.dark .mov::after,
+.current-pokemon > .pkm.dark .tier,
+.current-pokemon > .pkm.dark .tier::after {
   background: #595265 !important;
 }
 
@@ -504,7 +518,9 @@ body {
 .card.ground,
 .current-pokemon > .pkm.ground,
 .current-pokemon > .pkm.ground .mov,
-.current-pokemon > .pkm.ground .mov::after {
+.current-pokemon > .pkm.ground .mov::after,
+.current-pokemon > .pkm.ground .tier,
+.current-pokemon > .pkm.ground .tier::after {
   background: #d97842 !important;
 }
 
@@ -518,7 +534,9 @@ body {
 .card.flying,
 .current-pokemon > .pkm.flying,
 .current-pokemon > .pkm.flying .mov,
-.current-pokemon > .pkm.flying .mov::after {
+.current-pokemon > .pkm.flying .mov::after,
+.current-pokemon > .pkm.flying .tier,
+.current-pokemon > .pkm.flying .tier::after {
   background: #8eaadf !important;
 }
 
@@ -532,14 +550,16 @@ body {
 .card.none,
 .current-pokemon > .pkm.none,
 .current-pokemon > .pkm.none .mov,
-.current-pokemon > .pkm.none .mov::after {
-  background: #202020 !important;
+.current-pokemon > .pkm.none .mov::after,
+.current-pokemon > .pkm.none .tier,
+.current-pokemon > .pkm.none .tier::after {
+  background: #ffffff !important;
 }
 
 .type-icon.none,
 .current-pokemon > .pkm.none .ability > .name,
 .current-pokemon > .pkm.none .stats {
-  color: #202020 !important;
+  color: #ffffff !important;
 }
 
 /* DATOS SUPERIOR */
@@ -627,13 +647,21 @@ body {
   padding-top: 15px;
   bottom: 0;
   left: 5px;
+  transition: all ease-in-out 0.45s;
 }
 
-.current-pokemon .data > .movements {
+.current-pokemon:hover .data {
+  height: 600px;
+  z-index: 200;
+}
+
+.current-pokemon .data > .movements,
+.current-pokemon .data > .tiers {
   list-style-type: none;
 }
 
-.current-pokemon .data > .movements .mov {
+.current-pokemon .data > .movements .mov,
+.current-pokemon .data > .tiers .tier {
   font-family: 'Lato', sans-serif;
   font-size: 11px;
   text-transform: uppercase;
@@ -646,7 +674,8 @@ body {
   padding: 4px 15px 2.5px;
 }
 
-.current-pokemon .data > .movements .mov::after {
+.current-pokemon .data > .movements .mov::after,
+.current-pokemon .data > .tiers .tier::after {
   content: '';
   display: block;
   position: absolute;
